@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    background-image:url(assets/cover.png) ;
+   background-size: cover;  
+}
+
+.bg::after{
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    content: '';
+    opacity: .3;
+    z-index: -1;
+}
+main{
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+background-color:transparent;
+width: 500px;
+height: 500px;
+border-radius: 10%;
+padding: 0rem 1rem;
+position: relative;
+}
+ .card::after{
+    position: absolute;
+    border-radius: 10%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    content: '';
+    opacity: .3;
+    z-index: -1;
+ }
+
+.photo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: pink;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.details h1{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.details h3{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5rem;
+    color: whitesmoke;
+}
+.cardbody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content:space-evenly;
+    margin-top: 25px;
+    color: whitesmoke;
+    
+}
+
+.cardbody h2{
+    text-transform: capitalize;
+    font-size:30px;
+    font-weight: 400;
+}
+
+.cardbody ul{
+    font-size: 15px;
+    font-weight:300;
+}
+
+.line{
+    width: 1px;
+    height: 90px;
+    background-color: black;
+ 
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:25px ;
+    
+
+}
+
+.socials ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem ;
+}
+
+.socials img{
+    width: 40px;
+    height: 40px;
+    transition: .1s ease-in-out;
+    
+}
+.socials img:hover{
+    width: 60px;
+    height: 60px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+
+
